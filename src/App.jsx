@@ -59,7 +59,7 @@ const App = () => {
   };
 
   return (
-    <div className=" background font-roboto w-full h-screen flex justify-center items-center bg-black text-white font-" style={background}>
+    <div className=" background font-roboto w-full h-screen flex justify-center items-center text-white" style={background}>
       <div className="w-fit border-2 border-none py-3 px-5 rounded-lg shadow-red-700 shadow-2xl backdrop-blur-sm ">
         <h2 className=" text-3xl text-center font-bold my-4">Currency Exchanger</h2>
         <form
