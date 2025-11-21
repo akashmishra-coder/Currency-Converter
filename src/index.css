@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "tailwindcss";
+
+.background {
+    /* background: url('/src/public/img2.jpg');  */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+} 
+
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+}
