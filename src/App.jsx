@@ -54,7 +54,7 @@ const App = () => {
 
   return (
     <div
-      className=" background font-roboto w-full h-screen flex justify-center items-center bg-transparent text-white"
+      className=" background font-roboto w-full h-screen flex justify-center items-center bg-blue-950 text-white"
       style={background}
     >
       <div className="w-fit border-2 border-none py-3 px-5 rounded-lg shadow-red-700 shadow-2xl backdrop-blur-sm ">
