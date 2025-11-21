@@ -1,5 +1,5 @@
-import { useState, useEffect, use } from "react";
-import Input from "./components/input";
+import { useState, useEffect } from "react";
+import Input from "./components/Input";
 import useCurrencyExchanger from "./hooks/useCurrencyInfo";
 import "./index.css";
 import img1 from "./public/img1.jpg";
