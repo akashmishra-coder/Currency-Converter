@@ -55,7 +55,7 @@ const App = () => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    transition: 'background-image ease-in-out',
+    transition: 'background-image 1s ease-in-out',
   };
 
   return (
