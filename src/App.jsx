@@ -11,11 +11,9 @@ import img6 from "./public/img6.jpg";
 import img7 from "./public/img7.jpg";
 import img8 from "./public/img8.jpg";
 import img9 from "./public/img9.jpg";
-import img10 from "./public/img10.jpg"; 
-
+import img10 from "./public/img10.jpg";
 
 const App = () => {
-
   const [amount, setAmount] = useState();
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
@@ -25,17 +23,13 @@ const App = () => {
   const images = [img2, img10, img3, img4, img5, img6, img7, img8, img9, img1];
 
   useEffect(() => {
-
     const interval = setInterval(() => {
       setCurrentImgIndex((prevIndex) => (prevIndex + 1) % images.length);
+      console.log(currentImgIndex);
     }, 5000);
 
-    console.log(currentImgIndex);
     return () => clearInterval(interval);
-      
-  }, [] );
-
-
+  }, []);
 
   const currencyInfo = useCurrencyExchanger(from);
 
@@ -55,13 +49,18 @@ const App = () => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    transition: 'background-image 1s ease-in-out',
+    transition: "background-image 1s ease-in-out",
   };
 
   return (
-    <div className=" background font-roboto w-full h-screen flex justify-center items-center text-white" style={background}>
+    <div
+      className=" background font-roboto w-full h-screen flex justify-center items-center bg-transparent text-white"
+      style={background}
+    >
       <div className="w-fit border-2 border-none py-3 px-5 rounded-lg shadow-red-700 shadow-2xl backdrop-blur-sm ">
-        <h2 className=" text-3xl text-center font-bold my-4">Currency Exchanger</h2>
+        <h2 className=" text-3xl text-center font-bold my-4">
+          Currency Exchanger
+        </h2>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -93,7 +92,7 @@ const App = () => {
             amountdisable={true}
           />
           <button
-          type="submit"
+            type="submit"
             className="bg-red-800 w-full mt-5  mb-4 py-5 text-3xl  rounded-2xl cursor-pointer shadow-2xl shadow-black hover:opacity-90"
             onClick={convert}
           >

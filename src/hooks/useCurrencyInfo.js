@@ -12,7 +12,7 @@ function useCurrencyExchanger(currency){
         
     },[currency]);
     
-    console.log(data);        
+    // console.log(data);        
     return data;
 }
 
